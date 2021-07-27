@@ -1,0 +1,30 @@
+@media screen and (max-width: 580px) {
+    /* body {
+      background-color: lightgreen;
+    } */
+    img {
+        max-width: 300px;
+        margin-left: auto; 
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    .card580px{
+        max-width: 380px; 
+        margin-left: auto; 
+        margin-right: auto;
+        padding: 8px;
+    }
+    .home{
+        font-size: medium;
+    }
+  }
+
+  @media screen and (max-width: 770px) {
+
+    .card770px{
+        /* max-width: 380px;  */
+        margin-left: auto; 
+        margin-right: auto;
+        padding: 8px;
+    }
+  }
