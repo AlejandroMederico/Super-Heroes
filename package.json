@@ -2,6 +2,7 @@
   "name": "super-heroes",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://AlejandroMederico.github.io/Super-Heroes",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -22,6 +23,8 @@
     "yup": "^0.32.9"
   },
   "scripts": {
+    "predeploy" : "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -44,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
