@@ -19,8 +19,8 @@ const Detalle = () => {
                 ? (<Fragment/>)
                 : (<div className="row justify-content-md-center">
                     <div className="col-md-auto">
-                        <Link to={`/`} className="btn btn-primary d-block mx-auto mt-5" aria-current="page">Volver</Link>
-                        <div className="card mt-2" style={{width:"20rem"}}>
+                        <Link to={`/`} className="btn btn-primary d-block  mx-auto mt-5 " style={{width:"20rem"}} aria-current="page">Volver</Link>
+                        <div className="card mt-2 mx-auto p-2" style={{width:"20rem"}}>
                         <img src={JsonHeroe.image.url} 
                              alt={JsonHeroe.biography["full-name"]}
                              className="card-img-top"

@@ -85,17 +85,17 @@ const Formulario = () => {
                             
                             }
                         </div>
-                        <div className="d-grid gap-2 col-9 mx-auto">
+                        <div className="row mx-auto">
                             <button 
                             type="submit" 
-                            className="btn btn-primary d-block mx-auto px-5 ">
+                            className="btn btn-primary d-block mx-auto px-1 col-8  my-2 anchoMin200px">
                             Enviar Datos
                             </button>
                             <FacebookLogin
                                 appId="906973040174650"
                                 autoLoad={false}
                                 fields="name,email,picture"
-                                cssClass="btn btn-primary d-block mx-auto"
+                                cssClass="btn btn-primary d-block mx-auto px-2 col-9  my-2 anchoMin200px"
                                 size='metro'
                                 textButton="Ingresar por Facebook"
                                 onClick={componentClicked}

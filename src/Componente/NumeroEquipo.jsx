@@ -1,5 +1,6 @@
 import React from 'react'
 import {useSelector } from 'react-redux'
+// import '../style.css'
 
 const NumeroEquipo = () => {
     let good=0, bad=0;
@@ -13,8 +14,8 @@ const NumeroEquipo = () => {
     })
     return ( <div className="mt-3 row">
                 <h3 className="text-primary text-center col-12 mb-3">Equipo  : {good+bad}/6 </h3>
-                <h5 className="text-primary text-center col-6 col-md-12">Heroe Buenos : {good}</h5>
-                <h5 className="text-primary text-center col-6 col-md-12">Heroe Malo : {bad}</h5>
+                <h5 className="text-primary text-center col-6 col-md-12 ">Heroe Good : {good}</h5>
+                <h5 className="text-primary text-center col-6 col-md-12 ">Heroe Bad : {bad}</h5>
 
                 {(good+bad) === 6 
                   ? <h5 className="text-primary text-center mt-2 col-12 ">Equipo Completo</h5>

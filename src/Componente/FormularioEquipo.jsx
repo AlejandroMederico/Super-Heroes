@@ -19,7 +19,7 @@ const FormularioEquipo = ({BusquedaHeroe}) => {
     })
     // console.log(formik.values.nombre);
           return (
-                <div className="col-8 col-md-3 blanco mt-3  p-3 mx-auto" style={{maxHeight:"450px"}}>
+                <div className="col-11 col-md-3 blanco mt-3  p-3 mx-auto" style={{maxHeight:"450px"}}>
                   <h3 className="my-4 font-weight-bold text-primary text-center">Nombre del Heroe</h3>
                   <form onSubmit={formik.handleSubmit}>
                     <div className="mb-3">
