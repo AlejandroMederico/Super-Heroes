@@ -4,6 +4,7 @@ import ListaHeroeHome from '../Componente/ListaHeroeHome'
 import Menbrete from '../Componente/Menbrete';
 import PaginaFormulario from './PaginaFormulario';
 
+
 const Home = () => {
     let key = localStorage.getItem('key')
     console.log(key === null)

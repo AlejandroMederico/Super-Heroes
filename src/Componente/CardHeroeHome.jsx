@@ -8,9 +8,9 @@ const CardHeroeHome = ({JsonHeroe}) => {
     const dispatch= useDispatch()
     const todasLasEstadistica = useSelector(store => store.EstadisticaArray.equipo);
     const eliminar = () =>{
-        console.log(todasLasEstadistica);
+        // console.log(todasLasEstadistica);
         const nuevo = todasLasEstadistica.filter(e => e.id !== JsonHeroe.id)
-        console.log(nuevo);
+        // console.log(nuevo);
         dispatch(actualizarEquipoAction(nuevo))
     }
     
@@ -20,11 +20,11 @@ const CardHeroeHome = ({JsonHeroe}) => {
           ? (<Fragment/>)
           : (
             <div className="col">
-                <div className="card card580px">
+                <div className="card card580px p-2">
                         <img src={JsonHeroe.image.url} 
                              alt={JsonHeroe.name}
                              className="card-img-top"
-                             style={{maxHeight: "18em"}}
+                             style={{maxHeight: "16.5em"}}
                              />
                         <div className="card-body">
                             <h5 className="card-title">{JsonHeroe.name}</h5>

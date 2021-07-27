@@ -1,16 +1,17 @@
 import React, { Fragment } from 'react'
 import {useSelector } from 'react-redux'
 import AlertaIniciarSeccion from './AlertaIniciarSeccion';
+import "../style.css"
 
 const Menbrete = () => {
     const todasLasEstadistica = useSelector(store => store.EstadisticaArray.equipo);
     console.log(todasLasEstadistica.length );
     let combate=0,durabilidad=0,inteligencia=0,poder=0,velocidad=0,fuerza=0,alturaTotal=0,pesoTotal=0;
-return ( <div>
+return ( <div >
            {
                 todasLasEstadistica.length === 0
                 ? <AlertaIniciarSeccion info={"Por Favor Buscar heroe. Gracias!!"}/>
-                :<div>
+                :<div className="blanco mb-3 p-2 mt-3">
                 {     
                     todasLasEstadistica.map((e,index) =>{
                                                     let combatFor=parseInt(e.powerstats.combat)
@@ -33,7 +34,6 @@ return ( <div>
                                                     return(<Fragment key={index}/>)
                                                     })
                 }
-                
                 {(combate > durabilidad && 
                   combate > inteligencia && 
                   combate > poder &&
@@ -64,7 +64,7 @@ return ( <div>
                   velocidad > poder &&
                   velocidad > fuerza) ? <h1 className="text-center text-primary mt-2">El equipo tiene Velociddad</h1>
                   :<p></p>}
-                  {(velocidad > combate && 
+                  {(fuerza > combate && 
                   fuerza > durabilidad && 
                   fuerza > inteligencia &&
                   fuerza > poder &&

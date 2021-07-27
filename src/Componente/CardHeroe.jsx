@@ -4,7 +4,7 @@ import {agregarAlEquipoAction} from '../redux/EstadisticaDuck';
 import '../style.css'
 
 const CardHeroe = ({nombre,img,jsonHeroe}) => {
-    let good=0, bad=0;
+    let good=0, bad=0, repetido=0;
     const dispatch= useDispatch()
     const todasLasEstadistica = useSelector(store => store.EstadisticaArray.equipo);
     // console.log(todasLasEstadistica);
@@ -16,14 +16,18 @@ const CardHeroe = ({nombre,img,jsonHeroe}) => {
                 console.log(e.biography.alignment);
                 if (e.biography.alignment === "good") good=good+1;
                 if (e.biography.alignment === "bad") bad=bad+1;
+                if (e.id === jsonHeroe.id) repetido=1;
         
             });
-            if (jsonHeroe.biography.alignment === "good"){
-                if (good<3){dispatch(agregarAlEquipoAction(jsonHeroe))}
-                   else{alert("Por favor ingrese Heroe Malo para completar el grupo 6")}}
-            if (jsonHeroe.biography.alignment === "bad"){
-                if (bad<3){dispatch(agregarAlEquipoAction(jsonHeroe))}
-                    else{alert("Por favor ingrese Heroe buenos  para completar el grupo 6")}}
+            // console.log(!repetido);
+            if(!repetido){
+                if (jsonHeroe.biography.alignment === "good"){
+                    if (good<3){dispatch(agregarAlEquipoAction(jsonHeroe))}
+                       else{alert("Por favor ingrese Heroe Malo para completar el grupo 6")}}
+                if (jsonHeroe.biography.alignment === "bad"){
+                    if (bad<3){dispatch(agregarAlEquipoAction(jsonHeroe))}
+                        else{alert("Por favor ingrese Heroe buenos  para completar el grupo 6")}}
+            }
         }else alert("Ya tienes el equipo completo")
     }
 

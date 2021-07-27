@@ -5,6 +5,7 @@
         margin-left: auto; 
         margin-right: auto;
         margin-top: 10px;
+        min-height: 300px;
     }
     .card580px{
         max-width: 380px; 
@@ -17,7 +18,7 @@
     }
   }
 
-  @media screen and (max-width: 770px) {
+@media screen and (max-width: 770px) {
 
     .card770px{
         /* max-width: 380px;  */
@@ -25,4 +26,17 @@
         margin-right: auto;
         padding: 8px;
     }
-  }
+}
+
+body{
+    background-image: url(./img//R.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.blanco{
+    background-color: white;
+    border-radius: 30px;
+}

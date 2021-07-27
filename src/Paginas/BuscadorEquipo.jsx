@@ -11,7 +11,7 @@ const BuscadorEquipo = () => {
     let key = localStorage.getItem('key')
     // console.log(key === null)
     return ( 
-        <div className="container">
+        <div >
             {key === null
             ?<div>
                 <Redirect from='/buscar' to='/iniciarSeccion'/>

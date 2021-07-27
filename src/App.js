@@ -21,20 +21,22 @@ const store = generateStore()
     <Router>
       <Provider store={store}>
           <Navbar/>
+          <body>
             <Switch>           
-                   <Route path="/" exact>
-                        <Home  />
-                    </Route>
-                    <Route path="/buscar" exact>
-                        <BuscadorEquipo/>
-                    </Route>
-                    <Route path="/iniciarSeccion" exact>
-                        <PaginaFormulario />
-                    </Route>
-                    <Route path="/:id" exact>
-                        <Detalle/>
-                    </Route>
-            </Switch>
+                    <Route path="/" exact>
+                          <Home  />
+                      </Route>
+                      <Route path="/buscar" exact>
+                          <BuscadorEquipo/>
+                      </Route>
+                      <Route path="/iniciarSeccion" exact>
+                          <PaginaFormulario />
+                      </Route>
+                      <Route path="/:id" exact>
+                          <Detalle/>
+                      </Route>
+              </Switch>
+          </body>
       </Provider>
     </Router>
    );

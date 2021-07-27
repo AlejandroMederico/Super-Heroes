@@ -25,10 +25,10 @@ const dato = (e) =>{
 }
 
     return ( 
-            <div className="col-12 col-sm-9">
+            <div className="col-11 col-sm-11 col-md-8 blanco mt-3 p-3 mx-auto">
             {
                             heroe === ""
-                            ? <h1 className="text-center text-primary mt-5">Ingrese un Heroe al Buscador</h1>
+                            ? <h1 className="text-center text-primary mt-5" >Ingrese un Heroe al Buscador</h1>
                             : (<div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mt-3 "> 
                                 {ArrayBusqueda.map ((e,index) => <CardHeroe
                                                                 key={index}
