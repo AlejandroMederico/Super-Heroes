@@ -1,3 +1,17 @@
+Hola buenas tardes realice el challenge de React Super - Heroe..
+* El manejo de datos lo realize con redux para el equipo y usestate para el formulario de búsqueda..
+* El CSS y el responsi lo realizan de forma manual y con bootstrap..
+* Con respecto a la comunicación de la búsqueda del equipo de héroe lo realize con axion.
+* Los dos formularios lo realize con formik.* Para la paginación de react use React-router
+* Para la autenticación con facebook, Lo hice con con una librería que es React-Login-facebook que abre una pestaña donde te pide email y contrasena y te devuelve AppId
+* El login tengo problema con post porque me dice "error: "Please provide valid email and password" pero tengo keycode directamente por la pagina ApiHeroe , este access-token lo guardo en local store y lo consulto constantemente.
+
+Gracias por la oportunidad, espero que le guste mi trabajo.. Saludos y que pasen un excelente día..
+Posdata lo subi a github pages "https://alejandromederico.github.io/Super-Heroes/"
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
